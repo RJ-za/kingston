@@ -1,0 +1,188 @@
+/* Billing Page Specific Styles */
+
+.billing-intro {
+    padding: 80px 0;
+    background: var(--luxury-bg);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+
+.billing-services {
+    padding: 80px 0;
+    background: var(--bg-color);
+}
+
+.billing-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.billing-column {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(22, 33, 62, 0.9) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border: 2px solid rgba(201, 169, 110, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    backdrop-filter: blur(10px);
+}
+
+.billing-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(201, 169, 110, 0.3);
+    border-color: var(--primary-color);
+}
+
+.column-header {
+    background: var(--luxury-gradient);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.column-header h3 {
+    font-size: 1.8rem;
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.column-icon {
+    font-size: 3rem;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.column-content {
+    padding: 30px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-list h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-list p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.billing-benefits {
+    padding: 80px 0;
+    background: var(--luxury-bg);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(22, 33, 62, 0.9) 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: 2px solid rgba(201, 169, 110, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    backdrop-filter: blur(10px);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(201, 169, 110, 0.25);
+    border-color: var(--primary-color);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .billing-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    
+    .column-header h3 {
+        font-size: 1.5rem;
+    }
+}
