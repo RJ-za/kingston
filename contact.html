@@ -10,10 +10,11 @@
 <body>
     <header>
         <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="KingSton Dispatching Logo">
+                <h1>KingSton Dispatching</h1>
+            </div>
             <nav>
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="KingSton Dispatching Logo" width="40" height="40">KingSton</a>
-                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -91,22 +92,22 @@
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
                         </div>
                         
                         <div class="form-group">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company">
+                            <input type="text" id="company" name="company" placeholder="Enter your company name">
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
                         </div>
                         
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
                         </div>
                         
                         <div class="form-group full-width">
@@ -125,7 +126,7 @@
                         
                         <div class="form-group full-width">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your dispatching needs..."></textarea>
                         </div>
                         
                         <div class="form-group full-width">
@@ -254,5 +255,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
